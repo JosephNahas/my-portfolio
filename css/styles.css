@@ -61,11 +61,32 @@ footer {
     align-items: center;
     gap: 25px;
     background-color: rgb(6, 45, 77);
+    padding: 10px;
 }
 
 .projects-box .projects-image img{
     width: 100%;
 }
+
+.form{
+    background-color:rgb(6, 45, 77);
+}
+
+textarea {
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+
+  input[type=text]:focus {
+    background-color: lightblue;
+    border: 3px solid #555;
+  }
 
 /* Media Queries for Mobile Devices */
 @media only screen and (max-width: 600px) {
