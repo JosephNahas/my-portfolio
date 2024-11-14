@@ -1,3 +1,11 @@
+let aboutText = document.getElementById('typed-about');
+let typedAbout = new Typed("#typed-about", {
+    strings: ["game developer", "web developer", "computer programmer"],
+    typeSpeed: 50,
+    backSpeed: 50,
+    loop: true
+});
+
 let detailButtons = document.getElementsByClassName('details-btn'); 
 let projectDescriptions = document.getElementsByClassName('description');
 
