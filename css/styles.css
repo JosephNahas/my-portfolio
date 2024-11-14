@@ -20,16 +20,19 @@ header{
     width: 100%;
 }
 
-nav a {
+a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     display:inline;
-    margin-right: 100px;
 }
 
-nav a:hover {
+a:hover {
     text-decoration: underline;
+}
+
+nav a{
+    margin-right: 100px;
 }
 
 h2{
@@ -68,6 +71,10 @@ footer {
     width: 100%;
 }
 
+.description{
+    text-align: center;
+}
+
 .form{
     background-color:rgb(6, 45, 77);
 }
@@ -81,23 +88,17 @@ textarea {
     border-radius: 4px;
     background-color: #f8f8f8;
     resize: none;
-  }
+}
 
-  input[type=text]:focus {
+input[type=text]:focus {
     background-color: lightblue;
     border: 3px solid #555;
-  }
+}
 
 /* Media Queries for Mobile Devices */
 @media only screen and (max-width: 600px) {
     header, footer {
         padding: 10px;
-    }
-
-    nav ul li {
-        display: block;
-        text-align: center;
-        margin: 5px 0;
     }
 
     section {
