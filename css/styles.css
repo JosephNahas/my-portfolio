@@ -3,9 +3,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color:#081138;
+    background-color: white;
     line-height: 1.6;
+    color: black;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 header, footer {
     background-color: #090909;
@@ -36,22 +42,36 @@ nav a{
 }
 
 h2{
-    color: white;
+    color: black;
     font-size: xx-large;
 }
 
 section {
     padding: 20px;
     margin: 50px;
-    color: white;
+    color: black;
     font-size: x-large;
     text-align: center;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+
+section a{
+    color: black;
 }
 
 footer {
     background-color: #090909;
     color: white;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
     padding: 10px;
     position: fixed;
     width: 100%;
@@ -63,7 +83,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 25px;
-    background-color: rgb(6, 45, 77);
+    background-color:#ccc;
     padding: 10px;
 }
 
@@ -76,7 +96,7 @@ footer {
 }
 
 .form{
-    background-color:rgb(6, 45, 77);
+    background-color:#ccc;
 }
 
 textarea {
