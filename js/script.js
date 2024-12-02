@@ -61,3 +61,10 @@ submitButton.addEventListener("click", function(event){
         contactMessage.value = '';
     }
 });
+
+const toggleThemeButton = document.getElementById('toggleTheme');
+let aboutSection = document.getElementById('about');
+toggleThemeButton.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    aboutSection.classList.toggle('dark-mode');
+});
