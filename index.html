@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="js/script.js" defer></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
@@ -32,8 +33,10 @@
     <section id="projects">
         <h2>My Projects</h2>
 
-        <button class="filter-btn" data-category="game-dev">Game dev</button>
-        <button class="filter-btn" data-category="web-dev">Web dev</button>
+        <button class="filter-btn animate__animated animate__pulse animate__infinite infinite"
+            data-category="game-dev">Game dev</button>
+        <button class="filter-btn animate__animated animate__pulse animate__infinite infinite"
+            data-category="web-dev">Web dev</button>
 
         <div class="projects-container">
 
@@ -45,7 +48,8 @@
 
                 <div class="projects-info">
                     <h4>Horror game made in Unreal Engine 5</h4>
-                    <button class="details-btn" id="game-btn">Show Details</button>
+                    <button class="details-btn animate__animated animate__pulse animate__infinite infinite"
+                        id="game-btn">Show Details</button>
                     <p class="description" id="gameDescription">The game is called 'Out of Sight'. <br> Watch
                         gameplay here:
                         <a href="https://www.youtube.com/watch?v=22nSypZd_84">Gameplay</a>
@@ -62,7 +66,8 @@
 
                 <div class="projects-info">
                     <h4>Dynamic Blog Website</h4>
-                    <button class="details-btn" id="blog-btn">Show Details</button>
+                    <button class="details-btn animate__animated animate__pulse animate__infinite infinite"
+                        id="blog-btn">Show Details</button>
                     <p class="description" id="blogDescription">A blog site where users can create/view/edit/delete blog
                         posts. Here is the Github link: <a
                             href="https://github.com/JosephNahas/dynamic-blog-website">Github</a></p>
@@ -77,7 +82,8 @@
 
                 <div class="projects-info">
                     <h4>Gaming forum Website</h4>
-                    <button class="details-btn" id="forum-btn">Show Details</button>
+                    <button class="details-btn animate__animated animate__pulse animate__infinite infinite"
+                        id="forum-btn">Show Details</button>
                     <p class="description" id="forumDescription">A gaming forum site where users can review and discuss
                         games. Work in Progress: <a href="https://github.com/Jneyugn/game-website">Github</a></p>
                 </div>
@@ -105,7 +111,8 @@
                     <label for="message">Your message: </label><br><br>
                     <textarea id="message" rows="5" cols="50" required></textarea><br><br>
 
-                    <input type="submit" value="Submit" id="submit-btn"><br><br>
+                    <input type="submit" value="Submit" id="submit-btn"
+                        class="animate__animated animate__pulse animate__infinite infinite"><br><br>
 
                 </form>
 

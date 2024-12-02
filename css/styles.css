@@ -1,3 +1,4 @@
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -44,6 +45,11 @@ nav a{
 h2{
     color: black;
     font-size: xx-large;
+}
+
+button , #submit-btn {
+    border-radius: 10rem;
+    background-color: white;
 }
 
 section {
@@ -115,7 +121,6 @@ textarea {
 }
 
 input[type=text]:focus {
-    background-color: lightblue;
     border: 3px solid #555;
 }
 
