@@ -1,137 +1,23 @@
 
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    line-height: 1.6;
-    color: black;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-
-header, footer {
-    background-color: #090909;
-    color: white;
-    padding: 20px;
-}
-
-header{
-    text-align: right;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    display:inline;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-nav a{
-    margin-right: 100px;
-}
-
-h2{
-    color: black;
-    font-size: xx-large;
-}
-
-button , #submit-btn {
-    border-radius: 10rem;
-    background-color: white;
-}
-
-section {
-    padding: 20px;
-    margin: 50px;
-    color: black;
-    font-size: x-large;
-    text-align: center;
-}
-
-.dark-mode {
-    background-color: #333;
-    color: #fff;
-}
-
-.dark-mode h2 {
-    color: #fff;
-}
-
-
-section a{
-    color: black;
-}
-
-footer {
-    background-color: #090909;
-    color: white;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    gap: 20px;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-.projects-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 25px;
-    background-color:#ccc;
-    padding: 10px;
-}
-
-.projects-box .projects-image img{
-    width: 100%;
-}
-
-.description{
-    text-align: center;
-}
-
-.form{
-    background-color:#ccc;
-}
-
-textarea {
-    width: 50%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    resize: none;
-}
-
-input[type=text]:focus {
-    border: 3px solid #555;
-}
-
-/* Media Queries for Mobile Devices */
-@media only screen and (max-width: 600px) {
-    header, footer {
-        padding: 10px;
-    }
-
-    section {
-        padding: 10px;
-        margin: 10px;
-    }
-}
+body{background-color:#fff;color:#000;font-family:Arial,sans-serif;line-height:1.6;margin:0;padding:0}
+html{scroll-behavior:smooth}
+footer,header{background-color:#090909;color:#fff;padding:20px}
+header{position:fixed;text-align:right;top:0;width:100%;z-index: 10;}
+a{color:#fff;display:inline;font-weight:700;text-decoration:none}
+a:hover{text-decoration:underline}
+nav a{margin-right:100px}
+h2{color:#000;font-size:xx-large}
+#submit-btn,button{background-color:#fff;border-radius:10rem}
+section{color:#000;font-size:x-large;margin:50px;padding:20px;text-align:center}
+.dark-mode{background-color:#333;color:#fff}
+.dark-mode h2{color:#fff}
+section a{color:#000}
+footer{background-color:#090909;bottom:0;color:#fff;display:flex;gap:20px;justify-content:center;position:fixed;text-align:center;width:100%}
+.projects-container,footer{align-items:center;padding:10px}
+.projects-container{background-color:#ccc;display:grid;gap:25px;grid-template-columns:repeat(3,1fr)}
+.projects-box .projects-image img{width:100%}
+.description{text-align:center}
+.form{background-color:#ccc}
+textarea{background-color:#f8f8f8;border:2px solid #ccc;border-radius:4px;box-sizing:border-box;height:150px;padding:12px 20px;resize:none;width:50%}
+input[type=text]:focus{border:3px solid #555}
+@media only screen and (max-width:600px){footer,header,section{padding:10px}section{margin:10px}}
