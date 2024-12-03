@@ -15,12 +15,12 @@ canvas {padding: 0;margin: auto;display: block}
 section a{color:#000}
 footer{background-color:#090909;bottom:0;color:#fff;display:flex;gap:20px;justify-content:center;position:fixed;text-align:center;width:100%}
 .projects-container,footer{align-items:center;padding:10px}
-.projects-container{background-color:#ccc;display:grid;gap:25px;grid-template-columns:repeat(3,1fr)}
+.projects-container{background-color:#ccc;display:grid;gap:25px;grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));overflow:auto}
 .projects-box .projects-image img{width:100%}
 .description{text-align:center}
 .form{background-color:#ccc}
 #skills{display: flex;flex-direction: column; justify-content: center;align-content: center}
 textarea{background-color:#f8f8f8;border:2px solid #ccc;border-radius:4px;box-sizing:border-box;height:150px;padding:12px 20px;resize:none;width:50%}
 input[type=text]:focus{border:3px solid #555}
-@media only screen and (max-width:600px){.projects-container{grid-template-columns:none;grid-template-rows: repeat(3, 1fr)}header nav{display:flex}#about{height: 150px}#projects{margin-top: 0;padding-top: 0}#skills{margin-bottom: 0;padding-bottom: 0}
+@media only screen and (max-width:600px){nav{display:flex}#about{height: 200px}#projects{margin-top: 0;padding-top: 0}.projects-container{padding: 0}#skills{margin-bottom: 0;padding-bottom: 0}
 #contact{padding-bottom: 100px;padding-top: 0}}
