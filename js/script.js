@@ -1,5 +1,7 @@
+//-----------------Typed--------------//
 let aboutText=document.getElementById("typed-about");
 let typedAbout=new Typed("#typed-about",{strings:["game developer","web developer","computer programmer"],typeSpeed:50,backSpeed:50,loop:true});
+//-----------------Projects----------//
 let detailButtons=document.getElementsByClassName("details-btn");
 let projectDescriptions=document.getElementsByClassName("description");
 for(const description of projectDescriptions){
@@ -26,6 +28,7 @@ for(const button of detailButtons){
         }
     })
 }
+//--------------Contact Form----------------//
 let contactName=document.getElementById("name");
 let contactEmail=document.getElementById("email");
 let contactMessage=document.getElementById("message");
@@ -46,8 +49,7 @@ submitButton.addEventListener("click",function(event){
         contactMessage.value=""
     }
 });
-const toggleThemeButton=document.getElementById("toggleTheme");
-let aboutSection=document.getElementById("about");
+//---------------Project Filtering--------------//
 const filterButtons=document.querySelectorAll(".filter-btn");
 const projects=document.querySelectorAll(".projects-box");
 filterButtons.forEach(button=>{
@@ -62,6 +64,7 @@ filterButtons.forEach(button=>{
         })
     })
 });
+//----------------Skills Chart--------------------//
 var xValues = [ "HTML", "CSS", "Javascript", "C++", "C#", "Unreal Engine"];
 var yValues = [1, 1, 1, 2, 2, 2];
 var barColor = "black";
@@ -106,6 +109,9 @@ const myChart = new Chart("skills-chart", {
         }
     }
 });
+//------------------Dark Mode Toggle------------------------//
+let aboutSection=document.getElementById("about");
+const toggleThemeButton=document.getElementById("toggleTheme");
 toggleThemeButton.addEventListener("click",function(){
     document.body.classList.toggle("dark-mode");
     aboutSection.classList.toggle("dark-mode");
