@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="js/script.js" defer></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 
 <body>
@@ -27,6 +28,13 @@
     <section id="about">
         <h2>About Me</h2>
         <p>Hi, my name is Joseph Nahas and I am a <span id="typed-about"></span></p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div id="chart-div">
+            <canvas id="skills-chart" style="width:100%;max-width:700px"></canvas>
+        </div>
     </section>
 
     <!-- Projects Section -->

@@ -48,10 +48,6 @@ submitButton.addEventListener("click",function(event){
 });
 const toggleThemeButton=document.getElementById("toggleTheme");
 let aboutSection=document.getElementById("about");
-toggleThemeButton.addEventListener("click",function(){
-    document.body.classList.toggle("dark-mode");
-    aboutSection.classList.toggle("dark-mode")
-});
 const filterButtons=document.querySelectorAll(".filter-btn");
 const projects=document.querySelectorAll(".projects-box");
 filterButtons.forEach(button=>{
@@ -65,4 +61,56 @@ filterButtons.forEach(button=>{
             }
         })
     })
+});
+var xValues = [ "HTML", "CSS", "Javascript", "C++", "C#", "Unreal Engine"];
+var yValues = [1, 1, 1, 2, 2, 2];
+var barColor = "black";
+var chartLabelColor = "black";
+const myChart = new Chart("skills-chart", {
+    type: "bar",
+    data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColor,
+          data: yValues
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks:{
+                    fontColor: chartLabelColor,
+                    beginAtZero: true,
+                    callback: function(value,index){
+                        if (value == 0){
+                            return ' '
+                        } else if (value == 1){
+                            return 'Beginner';
+                        } else if (value == 2){
+                            return 'Experienced';
+                        }
+                    }
+                }
+            }],
+
+            xAxes: [{
+                ticks:{
+                    fontColor: chartLabelColor
+                }
+            }]
+        },
+        legend: {display: false},
+        title: {
+          display: false,
+          text: "Skills"
+        }
+    }
+});
+toggleThemeButton.addEventListener("click",function(){
+    document.body.classList.toggle("dark-mode");
+    aboutSection.classList.toggle("dark-mode");
+    myChart.data.datasets[0].backgroundColor = (myChart.data.datasets[0].backgroundColor == 'black') ? 'white' : 'black';
+    myChart.options.scales.yAxes[0].ticks.fontColor = (myChart.options.scales.yAxes[0].ticks.fontColor == 'black') ? 'white' : 'black';
+    myChart.options.scales.xAxes[0].ticks.fontColor = (myChart.options.scales.xAxes[0].ticks.fontColor == 'black') ? 'white' : 'black';
+    myChart.update();
 });
