@@ -2,7 +2,7 @@
 body{background-color:#fff;color:#000;font-family:Arial,sans-serif;line-height:1.6;margin:0;padding:0}
 html{scroll-behavior:smooth}
 footer,header{background-color:#090909;color:#fff;padding:20px}
-header{position:fixed;text-align:right;top:0;width:100%;z-index: 10;}
+header{position:fixed;text-align:right;top:0;width:100%;z-index: 10}
 a{color:#fff;display:inline;font-weight:700;text-decoration:none}
 a:hover{text-decoration:underline}
 nav a{margin-right:100px}
@@ -22,4 +22,5 @@ footer{background-color:#090909;bottom:0;color:#fff;display:flex;gap:20px;justif
 #skills{display: flex;flex-direction: column; justify-content: center;align-content: center}
 textarea{background-color:#f8f8f8;border:2px solid #ccc;border-radius:4px;box-sizing:border-box;height:150px;padding:12px 20px;resize:none;width:50%}
 input[type=text]:focus{border:3px solid #555}
-@media only screen and (max-width:600px){footer,header,section{padding:10px}section{margin:10px}}
+@media only screen and (max-width:600px){.projects-container{grid-template-columns:none;grid-template-rows: repeat(3, 1fr)}header nav{display:flex}#about{height: 150px}#projects{margin-top: 0;padding-top: 0}#skills{margin-bottom: 0;padding-bottom: 0}
+#contact{padding-bottom: 100px;padding-top: 0}}
