@@ -22,5 +22,5 @@ footer{background-color:#090909;bottom:0;color:#fff;display:flex;gap:20px;justif
 #skills{display: flex;flex-direction: column; justify-content: center;align-content: center}
 textarea{background-color:#f8f8f8;border:2px solid #ccc;border-radius:4px;box-sizing:border-box;height:150px;padding:12px 20px;resize:none;width:50%}
 input[type=text]:focus{border:3px solid #555}
-@media only screen and (max-width:600px){nav{display:flex}#about{height: 200px}#projects{margin-top: 0;padding-top: 0}.projects-container{padding: 0}#skills{margin-bottom: 0;padding-bottom: 0}
+@media only screen and (max-width:300px){nav{display:flex}#about{height: 200px}#projects{margin-top: 0;padding-top: 0}.projects-container{padding: 0}#skills{margin-bottom: 0;padding-bottom: 0}
 #contact{padding-bottom: 100px;padding-top: 0}}
