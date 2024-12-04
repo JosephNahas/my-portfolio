@@ -2,7 +2,7 @@
 body{background-color:#fff;color:#000;font-family:Arial,sans-serif;line-height:1.6;margin:0;padding:0}
 html{scroll-behavior:smooth}
 footer,header{background-color:#090909;color:#fff;padding:20px}
-header{position:fixed;text-align:right;top:0;width:100%;z-index: 10}
+header{position:fixed;text-align:center;top:0;width:100%;z-index: 10;display:flex;gap:20px;justify-content:right}
 a{color:#fff;display:inline;font-weight:700;text-decoration:none}
 a:hover{text-decoration:underline}
 nav a{margin-right:100px}
@@ -15,12 +15,12 @@ canvas {padding: 0;margin: auto;display: block}
 section a{color:#000}
 footer{background-color:#090909;bottom:0;color:#fff;display:flex;gap:20px;justify-content:center;position:fixed;text-align:center;width:100%}
 .projects-container,footer{align-items:center;padding:10px}
-.projects-container{background-color:#ccc;display:grid;gap:25px;grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));overflow:auto}
+.projects-container{background-color:#ccc;display:grid;gap:25px;grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))}
 .projects-box .projects-image img{width:100%}
-.description{text-align:center}
+.description{text-align:center;overflow-wrap:anywhere}
 .form{background-color:#ccc}
 #skills{display: flex;flex-direction: column; justify-content: center;align-content: center}
 textarea{background-color:#f8f8f8;border:2px solid #ccc;border-radius:4px;box-sizing:border-box;height:150px;padding:12px 20px;resize:none;width:50%}
 input[type=text]:focus{border:3px solid #555}
-@media only screen and (max-width:300px){nav{display:flex}#about{height: 200px}#projects{margin-top: 0;padding-top: 0}.projects-container{padding: 0}#skills{margin-bottom: 0;padding-bottom: 0}
+@media only screen and (max-width:600px){header{justify-content: center}.navigation{display: flex;margin-right: 20px}nav a{margin-right: 10px}#about{height: 200px}#projects{margin-top: 0;padding-top: 0}.projects-container{padding: 0}#skills{margin-bottom: 0;padding-bottom: 0}
 #contact{padding-bottom: 100px;padding-top: 0}}
